@@ -3,6 +3,7 @@
       <pre-header />
       <header-box :items="navItems" />
       <jumbotron-box />
+      <section-1-content />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import HeaderBox from './components/HeaderBox.vue'
 import JumbotronBox from './components/JumbotronBox.vue'
 import PreHeader from './components/PreHeader.vue'
+import Section1Content from './components/Section1Content.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     HeaderBox,
     PreHeader,
     JumbotronBox,
+    Section1Content,
   },
   data() {
       return{

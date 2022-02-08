@@ -23,7 +23,7 @@ export default {
     background-position: center;
     .jumbo-txt{
         color: $primary-text-color;
-        padding-top: 420px;
+        padding-top: 40vh;
         >h1 {
             font-size: 60px;
             margin-bottom: 20px;
