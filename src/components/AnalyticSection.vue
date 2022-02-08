@@ -1,6 +1,5 @@
 <template>
     <div class="container-fluid">
-        <img class="" src="@/assets/svg/driving-triangle.svg" alt="">
         <div class="container">
             <div class="row">
                 <div></div>
@@ -21,15 +20,8 @@ export default {
 @import '@/style/variables.scss';
 
 .container-fluid{
-    >img{
-        transform: rotate(360deg);
-        height: 150px;
-        width: 100%;
-        margin-top: -2px;
-    }
+    padding-bottom: 100px;
     .container{
-        position: relative;
-        top: -150px;
         .row{
             >div{
                 width: calc(100% / 3 - 10px);

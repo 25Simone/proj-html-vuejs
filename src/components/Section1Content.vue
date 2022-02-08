@@ -3,7 +3,7 @@
         <div class="row">
             <div id="section-left">
                 <h1>Get Behind The Wheel</h1>
-                <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ulceris libero, at suscipit lacus. Sed viate fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed viate fringilla nibh.</p>
             </div>
             <div id="first-lesson-tab">
@@ -50,7 +50,7 @@ export default {
             color: $secondary-text-color;
             margin: 40px 0;
         }
-        #subtitle{
+        .subtitle{
             font-size: 22px;
             line-height: 45px;
             margin-bottom: 30px;

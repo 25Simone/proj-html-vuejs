@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -26,6 +27,8 @@
             </div>
         </div>
     </div>
+    <img class="template-svg" src="@/assets/svg/driving-triangle.svg" alt="">
+</div>
 </template>
 
 <script>
@@ -40,9 +43,9 @@ export default {
 @import '@/style/variables.scss';
 
 .container-fluid{
-    height: 65vh;
     background: url('../assets/images/promise-background.jpg') bottom;
     background-size: cover;
+    padding-bottom: 50px;
     .row{
         align-items: center;
     }
@@ -72,6 +75,9 @@ export default {
             color: $tertiary-text-color;
             padding: 50px 0;
         }
+        .button_1{
+            display: inline-block;
+        }
     }
     .cards-container{
         width: 65%;
@@ -89,5 +95,11 @@ export default {
             }
         }
     }
+}
+.template-svg{
+    transform: rotate(360deg);
+    width: 100%;
+    height: 150px;
+    margin-top: -2px;
 }
 </style>

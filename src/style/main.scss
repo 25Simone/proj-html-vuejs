@@ -37,7 +37,6 @@
     color: $primary-text-color;
     border-radius: 30px;
     padding: 12px 30px;
-    display: inline-block;
     cursor: pointer;
 }
 .button_2{
@@ -52,4 +51,10 @@
 //LIST ITEMS
 li{
     cursor: pointer;
+}
+
+// SUBTITLE
+.subtitle{
+    line-height: 40px;
+    color: $tertiary-text-color;
 }
