@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <p>We have a 95% Successful Pass Rate!</p>
-                <p> <i class="fas fa-phone"></i> Give us a call to book your tuition! 1-800-555-555</p>
+                <p> <i class="fas fa-phone"></i> Give us a call to book your tuition! {{phone}}</p>
             </div>
         </div>
     </div>
@@ -11,7 +11,9 @@
 
 <script>
 export default {
-    
+    props:{
+        phone: String,
+    }
 }
 </script>
 
@@ -19,7 +21,7 @@ export default {
 @import '@/style/variables.scss';
 
 .pre-header{
-    background: $secondary-text-color;
+    background: #333;
     color: $tertiary-text-color;
     position: fixed;
     top: 0;

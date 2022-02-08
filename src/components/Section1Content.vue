@@ -32,6 +32,9 @@ export default {
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
 
+.container{
+    padding-bottom: 80px;
+}
 .row{
     >div{
         max-width: 50%;
