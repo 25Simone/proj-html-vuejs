@@ -37,6 +37,7 @@ header{
     background: rgba(53, 54, 55, .6);
     position: fixed;
     top: 44px;
+    z-index: 10;
     .container{
         padding: 30px 0;
         .row{

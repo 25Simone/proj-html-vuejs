@@ -62,7 +62,7 @@ export default {
         >div{
             background: #fff;
             width: 100%;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 50px 40px;
             text-align: center;
             box-shadow: 5px 10px 18px #888888;

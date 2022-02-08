@@ -40,7 +40,7 @@ export default {
 @import '@/style/variables.scss';
 
 .container-fluid{
-    height: 70vh;
+    height: 65vh;
     background: url('../assets/images/promise-background.jpg') bottom;
     background-size: cover;
     .row{

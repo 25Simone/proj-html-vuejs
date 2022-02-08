@@ -25,6 +25,7 @@ export default {
     color: $tertiary-text-color;
     position: fixed;
     top: 0;
+    z-index: 10;
     .container{
         padding: 15px 0;
         .row{

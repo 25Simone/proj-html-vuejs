@@ -6,6 +6,7 @@
       <section-1-content />
       <banner-box :phone="phone_number" />
       <courses-section :cards="courses" />
+      <analytic-section />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import JumbotronBox from './components/JumbotronBox.vue'
 import Section1Content from './components/Section1Content.vue'
 import BannerBox from './components/BannerBox.vue'
 import CoursesSection from './components/CoursesSection.vue'
+import AnalyticSection from './components/AnalyticSection.vue'
 
 export default {
   name: 'App',
@@ -26,6 +28,7 @@ export default {
     Section1Content,
     BannerBox,
     CoursesSection,
+    AnalyticSection,
   },
   data() {
       return{
