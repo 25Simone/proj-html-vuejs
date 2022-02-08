@@ -3,4 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif
+}
+
+// FONTAWESOME
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+
+// CONTAINER
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-fluid{
+    width: 100%;
+}
+
+// ROW
+.row{
+    display: flex;
 }
