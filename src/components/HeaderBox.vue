@@ -34,7 +34,7 @@ export default {
 @import '@/style/variables.scss';
 
 header{
-    background: rgba(73, 76, 78, .5);
+    background: rgba(53, 54, 55, .6);
     position: fixed;
     top: 44px;
     .container{

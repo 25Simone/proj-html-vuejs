@@ -5,6 +5,7 @@
       <jumbotron-box />
       <section-1-content />
       <banner-box :phone="phone_number" />
+      <courses-section :cards="courses" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HeaderBox from './components/HeaderBox.vue'
 import JumbotronBox from './components/JumbotronBox.vue'
 import Section1Content from './components/Section1Content.vue'
 import BannerBox from './components/BannerBox.vue'
+import CoursesSection from './components/CoursesSection.vue'
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     JumbotronBox,
     Section1Content,
     BannerBox,
+    CoursesSection,
   },
   data() {
       return{
@@ -66,6 +69,25 @@ export default {
                   label: 'Blog',
                   link: '#',
                   new_tag: false,
+              },
+          ],
+
+          // COURSES LIST
+          courses: [
+              {
+                  id: 'c1',
+                  name: 'Pass Pluse',
+                  image: 'courses-passplus.jpg',
+              },
+              {
+                  id: 'c2',
+                  name: 'Intensive Course',
+                  image: 'course-intensive.jpg',
+              },
+              {
+                  id: 'c3',
+                  name: 'Instructors',
+                  image: 'courses-instructor.jpg',
               },
           ],
       }

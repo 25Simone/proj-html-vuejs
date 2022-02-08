@@ -37,6 +37,15 @@
     color: $primary-text-color;
     border-radius: 30px;
     padding: 12px 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.button_2{
+    border: 3px solid $blue-color;
+    border-radius: 30px;
+    color: $blue-color;
+    padding: 12px 30px;
+    display: inline-block;
     cursor: pointer;
 }
 
