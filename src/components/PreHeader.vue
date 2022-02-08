@@ -21,6 +21,8 @@ export default {
 .pre-header{
     background: $secondary-text-color;
     color: $tertiary-text-color;
+    position: fixed;
+    top: 0;
     .container{
         padding: 15px 0;
         .row{

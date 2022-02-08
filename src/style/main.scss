@@ -9,6 +9,9 @@
 // FONTAWESOME
 @import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
 
+//VARIABLES
+@import './variables.scss';
+
 // CONTAINER
 .container{
     max-width: 1200px;
@@ -21,4 +24,23 @@
 // ROW
 .row{
     display: flex;
+}
+
+// IMG
+.img-fluid{
+    width: 100%;
+}
+
+//BUTTONS
+.button_1{
+    background-color: $green-color;
+    color: $primary-text-color;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+//LIST ITEMS
+li{
+    cursor: pointer;
 }

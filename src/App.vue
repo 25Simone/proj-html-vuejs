@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <pre-header />
-      <header-box />
+      <header-box :items="navItems" />
   </div>
 </template>
 
@@ -14,6 +14,49 @@ export default {
   components: {
     HeaderBox,
     PreHeader,
+  },
+  data() {
+      return{
+          // NAVBAR DATA
+          navItems: [
+              {
+                  id: 'n1',
+                  label: 'Home',
+                  link: '#',
+                  new_tag: false,
+              },
+              {
+                  id: 'n2',
+                  label: 'About',
+                  link: '#',
+                  new_tag: false,
+              },
+              {
+                  id: 'n3',
+                  label: 'Prices',
+                  link: '#',
+                  new_tag: false,
+              },
+              {
+                  id: 'n4',
+                  label: 'Courses',
+                  link: '#',
+                  new_tag: true,
+              },
+              {
+                  id: 'n5',
+                  label: 'Locations',
+                  link: '#',
+                  new_tag: false,
+              },
+              {
+                  id: 'n6',
+                  label: 'Blog',
+                  link: '#',
+                  new_tag: false,
+              },
+          ],
+      }
   }
 }
 </script>
