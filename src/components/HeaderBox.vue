@@ -34,7 +34,7 @@ export default {
 @import '@/style/variables.scss';
 
 header{
-    background: rgba(73, 76, 78, .8);
+    background: rgba(73, 76, 78, .5);
     position: fixed;
     top: 44px;
     .container{
@@ -74,6 +74,7 @@ header{
         }
         .button_1{
             font-weight: bold;
+            font-size: 15px;
         }
     }
 }

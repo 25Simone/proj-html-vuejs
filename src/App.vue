@@ -2,11 +2,13 @@
   <div id="app">
       <pre-header />
       <header-box :items="navItems" />
+      <jumbotron-box />
   </div>
 </template>
 
 <script>
 import HeaderBox from './components/HeaderBox.vue'
+import JumbotronBox from './components/JumbotronBox.vue'
 import PreHeader from './components/PreHeader.vue'
 
 export default {
@@ -14,6 +16,7 @@ export default {
   components: {
     HeaderBox,
     PreHeader,
+    JumbotronBox,
   },
   data() {
       return{
