@@ -6,8 +6,9 @@
       <section-1-content />
       <banner-box :phone="phone_number" />
       <courses-section :cards="courses" />
-      <analytic-section class="analytic-section" />
-      <instructors-box :cards="istructorsList" />
+      <analytic-section id="analytic-section" :items="statistics" />
+      <instructors-box id="istructors-container" :cards="istructorsList" />
+      <testimonials-app />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import BannerBox from './components/BannerBox.vue'
 import CoursesSection from './components/CoursesSection.vue'
 import AnalyticSection from './components/AnalyticSection.vue'
 import InstructorsBox from './components/IstructorsBox.vue'
+import TestimonialsApp from './components/TestimonialsApp.vue'
 
 export default {
   name: 'App',
@@ -32,6 +34,7 @@ export default {
     CoursesSection,
     AnalyticSection,
     InstructorsBox,
+    TestimonialsApp,
   },
   data() {
       return{
@@ -118,6 +121,28 @@ export default {
                   image: 'angelahart.jpg',
               },
           ],
+
+          // STATISTICS
+          statistics: [
+              {
+                  value: '95%',
+                  show_id: '95',
+                  rate_name: 'pass rate',
+              },
+              {
+                  value: '100%',
+                  show_id: '100',
+                  rate_name: 'referral rate',
+              },
+              {
+                  value: '0%',
+                  show_id: '0',
+                  rate_name: 'accident rate',
+              },
+          ],
+
+          //TESTIMONIALS
+          testimonialsList: [],
       }
   }
 }
@@ -127,8 +152,12 @@ export default {
 @import './style/main.scss';
 @import './style/variables.scss';
 
-.analytic-section{
+#analytic-section{
     position: relative;
     top: -150px;
+}
+#istructors-container{
+    position: relative;
+    bottom: -150px;
 }
 </style>

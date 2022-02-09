@@ -74,6 +74,7 @@ export default {
                 border-radius: 10px;
                 box-shadow: 5px 10px 18px #888888;
                 text-align: center;
+                background: #fff;
                 .title{
                     color: $secondary-text-color;
                     padding: 25px 0;
@@ -83,9 +84,6 @@ export default {
                     i{
                         padding: 0 10px;
                     }
-                }
-                &:hover{
-                    transform: scale(1.1);
                 }
             }
         }
