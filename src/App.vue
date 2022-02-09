@@ -9,6 +9,9 @@
       <analytic-section id="analytic-section" :items="statistics" />
       <instructors-box id="istructors-container" :cards="istructorsList" />
       <testimonials-app :testimonials="testimonialsList" />
+      <div id="latest-news-bg">
+          <latest-news id="latest-news-content"/>
+      </div>
   </div>
 </template>
 
@@ -22,6 +25,7 @@ import CoursesSection from './components/CoursesSection.vue'
 import AnalyticSection from './components/AnalyticSection.vue'
 import InstructorsBox from './components/IstructorsBox.vue'
 import TestimonialsApp from './components/TestimonialsApp.vue'
+import LatestNews from './components/LatestNews.vue'
 
 export default {
   name: 'App',
@@ -35,6 +39,7 @@ export default {
     AnalyticSection,
     InstructorsBox,
     TestimonialsApp,
+    LatestNews,
   },
   data() {
       return{
@@ -190,5 +195,14 @@ export default {
 #istructors-container{
     position: relative;
     bottom: -150px;
+}
+#latest-news-bg{
+    background: url('./assets/images/latestnews-background.jpg');
+    background-size: cover;
+    padding-bottom: 60px;
+    #latest-news-content{
+        position: relative;
+        top: -40px;
+    }
 }
 </style>
