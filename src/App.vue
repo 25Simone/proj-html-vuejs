@@ -3,7 +3,7 @@
       <pre-header :phone="phone_number" />
       <header-box :items="navItems" />
       <jumbotron-box />
-      <section-1-content />
+      <presentation-section />
       <banner-box :phone="phone_number" />
       <courses-section :cards="courses" />
       <analytic-section id="analytic-section" :items="statistics" />
@@ -21,7 +21,7 @@
 import PreHeader from './components/PreHeader.vue'
 import HeaderBox from './components/HeaderBox.vue'
 import JumbotronBox from './components/JumbotronBox.vue'
-import Section1Content from './components/Section1Content.vue'
+import PresentationSection from './components/PresentationSection.vue'
 import BannerBox from './components/BannerBox.vue'
 import CoursesSection from './components/CoursesSection.vue'
 import AnalyticSection from './components/AnalyticSection.vue'
@@ -37,7 +37,7 @@ export default {
     HeaderBox,
     PreHeader,
     JumbotronBox,
-    Section1Content,
+    PresentationSection,
     BannerBox,
     CoursesSection,
     AnalyticSection,

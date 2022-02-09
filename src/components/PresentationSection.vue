@@ -11,10 +11,10 @@
                     <h1>First Lesson Free!</h1>
                     <p>When you make a block booking with us your first lesson is included free.</p>
                     <form>
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
+                        <input type="text" placeholder="Your Name*">
+                        <input type="text" placeholder="Email*">
+                        <input type="text" placeholder="Telephone">
+                        <input type="text" placeholder="Location">
                         <div class="button_1">REQUEST A CALLBACK</div>
                     </form>
                 </div>
@@ -76,7 +76,12 @@ export default {
             input{
                 width: 100%;
                 margin: 20px 0;
+                padding: 0 15px;
                 height: 40px;
+                border: 1px solid $tertiary-text-color;
+                border-radius: 5px;
+                background: #f7f7f7;
+                color: $tertiary-text-color;
             }
             .button_1{
                 display: inline-block;
