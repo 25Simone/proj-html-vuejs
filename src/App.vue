@@ -13,6 +13,7 @@
           <latest-news id="latest-news-content"/>
       </div>
       <newsletter-form />
+      <footer-app :contacts="contactDetails" :coursesLinks="coursesLinks" />
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import InstructorsBox from './components/IstructorsBox.vue'
 import TestimonialsApp from './components/TestimonialsApp.vue'
 import LatestNews from './components/LatestNews.vue'
 import NewsletterForm from './components/NewsleterForm.vue'
+import FooterApp from './components/FooterApp.vue'
 
 export default {
   name: 'App',
@@ -43,6 +45,7 @@ export default {
     TestimonialsApp,
     LatestNews,
     NewsletterForm,
+    FooterApp,
   },
   data() {
       return{
@@ -180,6 +183,54 @@ export default {
                   image:'kate.png',
                   name: 'Kate Wilson',
                   overview: 'Avada Driving School really helped build my confidence behind thw wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+              },
+          ],
+
+          // CONTACT DETAILS
+          contactDetails: [
+              {
+                  id: 'co1',
+                  fa_icon: 'fas fa-home',
+                  text: '12345 North Main Street, New York, NY 555555',
+              },
+              {
+                  id: 'co2',
+                  fa_icon: 'fas fa-phone',
+                  text: '1.800.555.6789',
+              },
+              {
+                  id: 'co3',
+                  fa_icon: 'far fa-envelope',
+                  text: 'info@your-domain.com',
+              },
+              {
+                  id: 'co4',
+                  fa_icon: 'fas fa-link',
+                  text: 'Theme-Fusion.com',
+              },
+          ],
+
+          // COURSES LINKS
+          coursesLinks: [
+              {
+                  id: 'cl1',
+                  name: 'Pass Plus',
+                  link: '#',
+              },
+              {
+                  id: 'cl2',
+                  name: 'Intensive Course',
+                  link: '#',
+              },
+              {
+                  id: 'cl3',
+                  name: 'Automatic',
+                  link: '#',
+              },
+              {
+                  id: 'cl4',
+                  name: 'Instructor Training',
+                  link: '#',
               },
           ],
       }
