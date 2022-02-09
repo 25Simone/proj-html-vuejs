@@ -11,6 +11,7 @@
                     <h1>First Lesson Free!</h1>
                     <p>When you make a block booking with us your first lesson is included free.</p>
                     <form>
+                        <img src="@/assets/images/image.png" alt="">
                         <input type="text" placeholder="Your Name*">
                         <input type="text" placeholder="Email*">
                         <input type="text" placeholder="Telephone">
@@ -73,11 +74,20 @@ export default {
             p{
                 padding: 30px 0;
             }
+            form{
+                position: relative;
+                >img{
+                    width: 20px;
+                    position: absolute;
+                    top: 32px;
+                    right: 15px;
+                }
+            }
             input{
                 width: 100%;
                 margin: 20px 0;
                 padding: 0 15px;
-                height: 40px;
+                height: 45px;
                 border: 1px solid $tertiary-text-color;
                 border-radius: 5px;
                 background: #f7f7f7;
