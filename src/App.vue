@@ -8,7 +8,7 @@
       <courses-section :cards="courses" />
       <analytic-section id="analytic-section" :items="statistics" />
       <instructors-box id="istructors-container" :cards="istructorsList" />
-      <testimonials-app />
+      <testimonials-app :testimonials="testimonialsList" />
   </div>
 </template>
 
@@ -142,7 +142,38 @@ export default {
           ],
 
           //TESTIMONIALS
-          testimonialsList: [],
+          testimonialsList: [
+              {
+                  id: 't1',
+                  image:'sophia.png',
+                  name: 'Sophia Jones',
+                  overview: 'Avada Driving School really helped build my confidence behind thw wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+              },
+              {
+                  id: 't2',
+                  image:'harold.png',
+                  name: 'Harold Clark',
+                  overview: 'Avada Driving School really helped build my confidence behind thw wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+              },
+              {
+                  id: 't3',
+                  image:'kelly.png',
+                  name: 'Kelly Winston',
+                  overview: 'Avada Driving School really helped build my confidence behind thw wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+              },
+              {
+                  id: 't4',
+                  image:'grant.png',
+                  name: 'Grant Bishop',
+                  overview: 'Avada Driving School really helped build my confidence behind thw wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+              },
+              {
+                  id: 't5',
+                  image:'kate.png',
+                  name: 'Kate Wilson',
+                  overview: 'Avada Driving School really helped build my confidence behind thw wheel and with driving in general, and they got me a first time pass! Highly recommended.'
+              },
+          ],
       }
   }
 }
