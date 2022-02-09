@@ -12,6 +12,7 @@
       <div id="latest-news-bg">
           <latest-news id="latest-news-content"/>
       </div>
+      <newsletter-form />
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import AnalyticSection from './components/AnalyticSection.vue'
 import InstructorsBox from './components/IstructorsBox.vue'
 import TestimonialsApp from './components/TestimonialsApp.vue'
 import LatestNews from './components/LatestNews.vue'
+import NewsletterForm from './components/NewsleterForm.vue'
 
 export default {
   name: 'App',
@@ -40,6 +42,7 @@ export default {
     InstructorsBox,
     TestimonialsApp,
     LatestNews,
+    NewsletterForm,
   },
   data() {
       return{
