@@ -45,7 +45,7 @@ export default {
         line-height: 30px;
     }
     #section-left{
-        padding: 50px 40px;
+        padding: 70px 40px;
         h1{
             font-size: 40px;
             color: $secondary-text-color;
@@ -58,7 +58,6 @@ export default {
         }
     }
     #first-lesson-tab{
-        margin-top: -5%;
         width: 100%;
         >div{
             background: #fff;

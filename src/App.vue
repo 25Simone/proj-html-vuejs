@@ -5,7 +5,7 @@
       <header-box :items="navItems" />
       <jumbotron-box />
       <!-- MAIN -->
-      <presentation-section />
+      <presentation-section id="presentation-section"/>
       <banner-box :phone="phone_number" />
       <courses-section :cards="courses" />
       <analytic-section id="analytic-section" :items="statistics" />
@@ -244,6 +244,11 @@ export default {
 <style lang="scss">
 @import './style/main.scss';
 @import './style/variables.scss';
+
+#presentation-section{
+    position: relative;
+    top: -40px;
+}
 
 #analytic-section{
     position: relative;
