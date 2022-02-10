@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <div class="row">
-            <h1>Your Instructors</h1>
+            <!-- SECTION TITLE -->
+            <h1 class="title">Your Instructors</h1>
             <div class="subtitle-container">
                 <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                 <div class="button_1">MORE ABOUT US</div>
@@ -11,7 +12,7 @@
                 <div class="row">
                     <!-- CARD -->
                     <div
-                    class="card"
+                    class="card box-shadow"
                     v-for="card in cards"
                     :key="card.id"
                     >
@@ -19,6 +20,7 @@
                         <div class="card-img">
                             <img class="img-fluid" :src="`/istructors-img/instructor-${card.image}`" :alt="'foto' + card.name">
                         </div>
+                        <!-- CARD DATA -->
                         <h2 class="title">{{card.name}}</h2>
                         <div class="socials">
                             <i class="fab fa-facebook-f"></i>
@@ -46,8 +48,9 @@ export default {
 
 .row{
     flex-direction: column;
-    h1{
+    .title{
         padding-bottom: 50px;
+        font-size: 40px;
     }
     >.subtitle-container{
         display: flex;
@@ -72,11 +75,9 @@ export default {
                 padding: 30px;
                 border-top: 4px solid $green-color;
                 border-radius: 10px;
-                box-shadow: 5px 10px 18px #888888;
                 text-align: center;
                 background: #fff;
                 .title{
-                    color: $secondary-text-color;
                     padding: 25px 0;
                 }
                 .socials{

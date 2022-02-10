@@ -7,7 +7,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper. Fusce et ulceris libero, at suscipit lacus. Sed viate fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed viate fringilla nibh.</p>
             </div>
             <div id="first-lesson-tab">
-                <div>
+                <div class="box-shadow">
                     <h1>First Lesson Free!</h1>
                     <p>When you make a block booking with us your first lesson is included free.</p>
                     <form>
@@ -66,7 +66,6 @@ export default {
             border-radius: 10px;
             padding: 50px 40px;
             text-align: center;
-            box-shadow: 5px 10px 18px #888888;
             h1{
                 color: $green-color;
                 margin-bottom: 20px;

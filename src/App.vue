@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+      <!-- HEADER -->
       <pre-header :phone="phone_number" />
       <header-box :items="navItems" />
       <jumbotron-box />
+      <!-- MAIN -->
       <presentation-section />
       <banner-box :phone="phone_number" />
       <courses-section :cards="courses" />
@@ -13,6 +15,7 @@
           <latest-news id="latest-news-content"/>
       </div>
       <newsletter-form />
+      <!-- FOOTER -->
       <footer-app :contacts="contactDetails" :coursesLinks="coursesLinks" />
   </div>
 </template>

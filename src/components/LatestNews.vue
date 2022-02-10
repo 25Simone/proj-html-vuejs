@@ -4,6 +4,7 @@
         <div class="container">
             <div class="row">
                 <h1 class="title">Latest News</h1>
+                <!-- POSTS -->
                 <div class="posts">
                     <div>
                         <img class="img-fluid" src="@/assets/images/blog-choosecar-700x441.jpg" alt="post image">

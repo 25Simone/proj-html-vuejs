@@ -4,10 +4,10 @@
         <div class="container">
             <div class="row">
                 <!-- COURSES INFORMATION -->
-                <div id="courses-information">
+                <div id="courses-information" class="box-shadow">
                     <img src="@/assets/images/new-corner.jpg" alt="new corner image">
-                    <h1>Courses</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
+                    <h1 class="title">Courses</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.</p>
                     <div class="button_1">COURSE INFORMATION</div>
                 </div>
                 <!-- COURSES CARDS -->
@@ -27,6 +27,7 @@
             </div>
         </div>
     </div>
+    <!-- TEMPLATE SVG -->
     <img class="template-svg" src="@/assets/svg/driving-triangle.svg" alt="">
 </div>
 </template>
@@ -45,21 +46,20 @@ export default {
 .container-fluid{
     background: url('../assets/images/promise-background.jpg') bottom;
     background-size: cover;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     .row{
         align-items: center;
     }
     #courses-information{
-        background: #fff;
+        width: 35%;
         margin-right: 20px;
         padding: 60px 40px;
-        width: 35%;
         border-radius: 10px;
-        box-shadow: 5px 10px 18px #888888;
-        position: relative;
-        top: -30px;
+        background: #fff;
         overflow: hidden;
         text-align: center;
+        position: relative;
+        top: -30px;
         img{
             position: absolute;
             top: 0;
@@ -68,11 +68,8 @@ export default {
         }
         h1{
             font-size: 36px;
-            color: $secondary-text-color;
         }
         p{
-            line-height: 30px;
-            color: $tertiary-text-color;
             padding: 50px 0;
         }
         .button_1{
@@ -81,6 +78,7 @@ export default {
     }
     .cards-container{
         width: 65%;
+        padding-top: 50px;
         .course-card{
             width: calc(100% / 3);
             padding: 0 20px;

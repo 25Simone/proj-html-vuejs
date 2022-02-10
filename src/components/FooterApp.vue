@@ -1,4 +1,5 @@
 <template>
+<div>
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
@@ -34,6 +35,20 @@
             </div>
         </div>
     </footer>
+    <div class="footer-bottom container-fluid">
+        <div class="container">
+            <div class="row">
+                <div><i class="far fa-copyright"></i> Copyright 2012 - 2020 | Avada Theme by <span>Theme Fusion</span> | All Rights Reserved | powered by <span>Wordpress</span></div>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -87,6 +102,24 @@ footer{
             display: inline-block; 
             font-weight: bold;
             margin: 15px 0;   
+        }
+    }
+}
+.footer-bottom{
+    padding: 70px 0;
+    background: #222;
+    font-size: 12px;
+    color: $tertiary-text-color;
+    .row{
+        align-items: center;
+        justify-content: space-between;
+        span{
+            color: $green-color;
+        }
+        i{
+            color: #fff;
+            margin: 0 10px;
+            font-size: 15px;
         }
     }
 }

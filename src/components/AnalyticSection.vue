@@ -3,10 +3,11 @@
         <div class="row">
             <!-- ANALYTICS ITEMS -->
             <div
+            class="box-shadow"
             v-for="(item, i) in items"
             :key="i"
             >
-                <div>
+                <div class="analytic-date">
                     {{item.value}}
                     <!-- LOADER SVG -->
                     <svg v-if="item.show_id != 0" height="230" width="230">
@@ -33,28 +34,31 @@ export default {
 .container{
     .row{
         >div{
-            width: calc(100% / 3 - 10px);
-            margin: 0 5px;
+            width: calc(100% / 3 - 16px);
+            margin: 0 8px;
             padding: 50px;
             border-top: 4px solid $green-color;
             border-radius: 10px;
             background: #fff;
-            box-shadow: 5px 10px 18px #888888;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            div{
+            transition: all .5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            .analytic-date{
                 width: 220px;
                 height: 220px;
                 border-radius: 50%;
                 border: 10px solid #ccc;
-                position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 50px;
+                position: relative;
                 color: $tertiary-text-color;
+                font-size: 50px;
                 svg{
                     position: absolute;
                     top: -10px;
