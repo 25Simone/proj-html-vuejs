@@ -18,7 +18,7 @@
                     :key="card.id"
                     >
                         <div class="card-img">
-                            <img class="img-fluid" :src="`/${card.image}`" :alt="card.name + 'thumb'">
+                            <img class="img-fluid" :src="`/courses-img/${card.image}`" :alt="card.name + 'thumb'">
                         </div>
                         <h2 class="course-title">{{card.name}}</h2>
                         <div class="button_2">LEARN MORE</div>

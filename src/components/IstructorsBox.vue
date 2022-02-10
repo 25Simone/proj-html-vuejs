@@ -17,7 +17,7 @@
                     >
                         <!-- CARD IMG -->
                         <div class="card-img">
-                            <img class="img-fluid" :src="`/instructor-${card.image}`" :alt="'foto' + card.name">
+                            <img class="img-fluid" :src="`/istructors-img/instructor-${card.image}`" :alt="'foto' + card.name">
                         </div>
                         <h2 class="title">{{card.name}}</h2>
                         <div class="socials">
